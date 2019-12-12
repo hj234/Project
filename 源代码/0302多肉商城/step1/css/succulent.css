@@ -1,0 +1,69 @@
+/*第3单元  项目3-2 多肉书城*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F7F7F7;
+}
+
+header {
+    text-align: center;
+    height: 450px;
+    margin-top: 20px;
+}
+
+section {
+    width: 880px;
+    margin: 0 auto;
+    background-color: #AAE6DA;
+}
+
+section > p {
+    font-family: 'STXingkai';
+    font-size: 18px;
+    color: #fff;
+    line-height: 30px;
+    padding: 20px;
+    text-indent: 2em; /*文本段落首行缩进两格*/
+}
+
+footer {
+    width: 880px;
+    margin: 0 auto;
+}
+
+footer > p {
+    font-family: 'STXingkai';
+    font-size: 35px;
+    color: #AAE6DA;
+    line-height: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.services {
+    font-family: 'Microsoft Yahei';
+    font-size: 15px;
+    color: #374136;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.border-radius {
+    width: 200px;
+    height: 50px;
+    margin: 35px auto;
+    background-color: #AAE6DA;
+    border: 5px solid #fff;
+    border-radius: 50px; /*四个边框圆角半径都是50px*/
+    font-family: 'Microsoft Yahei';
+    font-size: 25px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+}
+
+/*当鼠标悬停在该元素时，绝对定位在父元素顶部-5px，以及给该元素加盒阴影*/
+.border-radius:hover {
+    top: -5px;
+    box-shadow: 0 0 15px #AAA; /*模糊值为15px的#AAA色的盒阴影*/
+}

@@ -1,0 +1,29 @@
+body
+{
+    /*设置外边距为0*/
+    margin: 0px;
+    /*设置内边距为0*/
+    padding: 0px;
+}
+
+div{
+    /*设置div为绝对定位*/
+    position: absolute;
+}
+
+.bg
+{
+    width: 800px;
+    height: 600px;
+    background: #f2f2f2;
+    /*隐藏溢出的内容*/
+    overflow: hidden;
+}
+
+.beam{
+    width: 1600px;
+    height: 20px;
+    top:290px;
+    left: -400px;
+    background: #fff;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景设置常用属性</title>
+    <style>
+        .body{
+            height: 2000px;
+        }
+        .show-box{
+            width: 600px;
+            height: 600px;
+            /*背景颜色
+                颜色单词
+                16进制颜色
+                rgb
+            */
+            /*background-color: yellow;*/
+            /*background-color: #2bab79;*/
+            /*background-color: rgb(100,100,100);*/
+            /*背景图
+                url指定图片的路径
+            */
+            /*background-image: url("images/demo3-1/chicken.png");*/
+
+            /*背景图 平铺
+                no-repeat 不平铺
+                repeat-x 沿x轴平铺
+            */
+            /*background-repeat: no-repeat;*/
+
+            /*背景图大小
+                具体尺寸 100px 100px
+                继承父盒子 10% 20% （直接设置100% 100% 可能出现 图片失真）
+                contain:缩放背景图 宽高等比例缩放 某一边定格 停止缩放
+                cover:宽高等比例缩放 两边都定格 可能会出现 某一边出去的情况
+            */
+            /*background-size:100px 100px ;*/
+
+            /*背景图的位置
+                直接设置位置 top right(center等)
+                具体的坐标 100px 200px
+            */
+            /*background-position: 100px 200px;*/
+
+            /*背景图 跟随滚动
+                scroll 滚动
+                fixed 固定位置不变
+                    fixed设置后就会依据body的尺寸进行百分比设置
+            */
+            /*background-attachment: fixed;*/
+            /* 背景图片复合写法
+                background 上述所有值
+                    都能够设置进去
+                    使用空格分割即可
+                    顺序不固定
+                    背景大小需写在背景位置之后，使用/ 分隔
+                        背景位置 / 背景大小
+            */
+            background:url("images/demo3-1/chicken.png") orange repeat-x top left/ 100px 100px;
+
+        }
+    </style>
+</head>
+<body>
+<div class="show-box"></div>
+</body>
+</html>

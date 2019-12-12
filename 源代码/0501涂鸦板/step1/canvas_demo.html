@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>涂鸦板</title>
+</head>
+<style>
+    #cvsElem{
+        display: block;
+        margin: 10px auto;
+        border: 1px solid blue;
+    }
+</style>
+<body>
+<canvas id="cvsElem">
+
+</canvas>
+<script type="text/javascript">
+    var cvs = document.getElementById("cvsElem");
+    var context = cvs.getContext("2d");
+
+    //设置标签的宽高和边框
+    cvs.width = 900;
+    cvs.height = 600;
+
+    cvs.onmousedown = function (event) {
+        context.beginPath();
+        context.moveTo(event.offsetX,event.offsetY);
+
+        cvs.onmousemove = function (e) {
+            context.lineTo(e.offsetX,e.offsetY);
+            context.stroke();
+        };
+
+        cvs.onmouseup = function (e) {
+            cvs.onmousemove = null;
+        };
+    };
+
+</script>
+</body>
+</html>

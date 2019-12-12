@@ -1,0 +1,39 @@
+/*第2单元 项目2-2  广告推广软文页面 */
+html,body {
+  width: 100%;
+  height: 100%;
+}
+html{
+  overflow: hidden;
+}
+body {
+  font-family: 'Microsoft Yahei';
+  /*color: #ffffff;*/
+  /*新增的，去body的默认边距*/
+  padding: 0;
+  margin: 0;
+}
+ h3, h4, h5{
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+div {
+    display: block;
+}
+@font-face {
+  font-family: 'Pinyon Script';
+  src: url("../fonts/PinyonScript-Regular.ttf") ;
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;/*把行元素转换为行内块元素*/
+  font: normal normal normal 14px / 1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;/*设置文本渲染引擎工作时如何优化显示文本， 默认值：auto*/
+  -webkit-font-smoothing: antialiased;
+}

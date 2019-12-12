@@ -1,0 +1,65 @@
+/*第4单元 项目4-2 用户注册页面*/
+*:focus {outline: none;}/*该元素获得焦点时，不出现虚线框（或高亮框）*/
+.contact_form{
+    width: 70%;/*设置该元素宽度为整个浏览器的70%*/
+    position: absolute;/*绝对定位*/
+    top: 20%;
+    left: 35%;
+}
+.tree{
+    position:relative;/*相对定位*/
+    top: 420px;
+    left: 260px;
+}
+.contact_form h2, .contact_form span {
+    font-family:Georgia, Times, "Times New Roman", serif;
+}
+
+.contact_form ul {
+    width:750px;
+    list-style: none;/*清除默认样式*/
+    margin:0px;
+    padding:0px;
+}
+.contact_form li{
+    padding:12px;
+    border-bottom:1px solid #eee;
+    position:relative;
+}
+/*给类名为contact_form的元素的第一个子元素li和最后一个子元素li加底部边框*/
+.contact_form li:first-child,
+.contact_form li:last-child {
+    border-bottom:1px solid #777;
+}
+.contact_form h2 {
+    margin:0;
+}
+.contact_form span {
+    width:150px;
+    margin-top: 3px;
+    display:inline-block;/*把块元素强制转换为行内块元素*/
+    padding:3px;
+}
+/*给类名为usually的元素下的input标签定义宽高和内边距*/
+.usually input {
+    height:20px;
+    width:220px;
+    padding:5px 8px;
+}
+.contact_form textarea {padding:8px; width:300px;}
+.contact_form button {margin-left:156px;}
+.special input {
+    height:15px;
+    width:40px;
+    padding:5px 8px;
+}
+/*给类名为usually的元素下的input和textarea标签设置背景颜色、背景图片、边框、外阴
+影、内阴影、边框圆角以及内边距的过渡效果*/
+.usually input,
+.usually textarea {
+    background: #fff url(../images/attention.png) no-repeat 98% center;
+    border:1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius:2px;
+    transition: padding .25s;
+}

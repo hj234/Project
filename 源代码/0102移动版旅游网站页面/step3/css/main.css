@@ -1,0 +1,10 @@
+/*第1单元 项目1-2  旅游网站页面 main.css*/
+.qui-page {
+    width: 640px;
+}
+.qui-header {
+    width: 100%;
+    height: 80px;
+    overflow: hidden;  /*隐藏溢出内容*/
+    background-color: #2bab79;  /*背景颜色为#2bab79*/
+}
